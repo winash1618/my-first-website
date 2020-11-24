@@ -1,94 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Page Title</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-.sidenav {
-	height: 100%;
-	width: 20%;
-}
-.sidenav a {
-  float: left; /* Make sure that the links stay side-by-side */
-  display: block; /* Change the display to block, for responsive reasons (see below) */
-  color: Black; /* White text color */
-  padding: 14px 20px; /* Add some padding */
-  text-decoration: none; /* Remove underline */
-}
-.sidenav a:hover {
-	color:red;
-}
-.header {
-  padding: 80px; /* some padding */
-  text-align: center; /* center the text */
-  background: #1abc9c; /* green background */
-  color: white; /* white text color */
-  background-image: url('1.svg');
-}
-
-/* Increase the font size of the <h1> element */
-.header h1 {
-  font-size: 40px;
-}
-/* Ensure proper sizing */
-* {
-  box-sizing: border-box;
-}
-
-/* Column container */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-.side {
-  flex: 30%; /* Set the width of the sidebar */
-  hight: 100%;
-  background-color: #f1f1f1; /* Grey background color */
-  padding: 20px; /* Some padding */
-}
-
-/* Main column */
-.main {
-  flex: 70%; /* Set the width of the main content */
-  background-color: white; /* White background color */
-  padding: 20px; /* Some padding */
-}
-</style>
-</head>
-<body>
-
-<div class="header">
-  <h1>IGNOU</h1>
-  <p>we focus on enhancing the student abilities by giving them a
-	a chance to what ever they want</p>
-</div>
-<script src = "validate.js"></script>
-<div class="row">
-  <div class="side">
-  	<div id="sidebar">
-  	</div>
-	
-  </div>
-  <div class="main"><h1>Welcome Messege</h1>
-  <p>IGNOU, the National Resource Centre for Open and Distance Learning (ODL), with international recognition and presence, shall provide seamless access to sustainable and learner-centric quality education, skill upgradation and training to all by using innovative technologies and methodologies and ensuring convergence of existing systems for massive human resource required for promoting integrated national development and global understanding.</p>
-  <h1>Aim</h1>
-  <p>To advance frontiers of knowledge and promote its dissemination through sustainable Open and Distance Learning systems, seamlessly accessible to all, including those hitherto unreached, from among whom the leaders and innovators of tomorrow will emerge, the University shall:</p>
-	<ul>
-		<li>Strengthen the development of the National Resource Centre as a proactive role model for high-quality and learner-centric Open and Distance Learning system</li>
-		<li>Share professional capabilities and resources to improve standards of distance education in the country</li>
-		<li>Periodically assess and accredit institutions of Open and Distance Learning to promote centres of excellence in the country</li>
-		<li>Develop networks, using emerging technologies and methods, with global reach for effective programme delivery</li>
-		<li>Provide an intelligent and flexible system of education to meet the challenges of access and equity, and work towards development of a knowledge society</li>
-		<li>Forge convergence of all systems and work for seamless education across national boundaries to develop global collaboration and partnership</li>
-	</ul>
-  <h1>Objectives</h1>
-  <p>Objectives of Gandhi National Open University (IGNOU) is to provide vocational education to that section of the society. The organization provides primary emphasis to cost effectiveness of education, innovation, flexibility and innovation in teaching technique.</p>
-  </div>
-</div>
-
-</body>
+  <html lang="en">
+  <head>
+    <title>IGNOU's website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mystyle.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1>IGNOU</h1>
+      <p>
+        we focus on enhancing the student abilities by giving them a
+        a chance to what ever they want
+      </p>
+    </div>
+    <div class="row">
+      <div class="side">
+        <div class="sidenav">
+          <a href="index.html">Home</a>
+          <a href="list.html">Program List</a>
+          <a href="form.html">Registration Form</a>
+          <a href="date.html">Imortant Dates</a>
+        </div>
+      </div>
+      <div class="main">
+        <h1>Welcome Messege</h1>
+        <p>IGNOU, the National Resource Centre for Open and Distance Learning (ODL), with international recognition and presence, shall provide seamless access to sustainable and learner-centric quality education, skill upgradation and training to all by using innovative technologies 
+            and methodologies and ensuring convergence of existing systems for massive human resource required for promoting integrated national development 
+            and global understanding.
+        </p>
+        <h1>Aim</h1>
+        <p>
+          To advance frontiers of knowledge and promote its dissemination through sustainable Open and Distance Learning systems, seamlessly 
+          accessible to all, including those hitherto unreached, from among whom the leaders and innovators of tomorrow will emerge, 
+          the University shall:
+        </p>
+        <ul>
+          <li>Strengthen the development of the National Resource Centre as a proactive role model for high-quality and learner-centric Open 
+            and Distance Learning system</li>
+          <li>Share professional capabilities and resources to improve standards of distance education in the country</li>
+          <li>Periodically assess and accredit institutions of Open and Distance Learning to promote centres of excellence in the country</li>
+          <li>Develop networks, using emerging technologies and methods, with global reach for effective programme delivery</li>
+          <li>Provide an intelligent and flexible system of education to meet the challenges of access and equity, and work towards development of a 
+            knowledge society</li>
+          <li>Forge convergence of all systems and work for seamless education across national boundaries to develop global collaboration and 
+            partnership</li>
+        </ul>
+        <h1>Objectives</h1>
+        <p>Objectives of Gandhi National Open University (IGNOU) is to provide vocational education to that section of the society.
+           The organization provides primary emphasis to cost effectiveness of education, innovation, flexibility and innovation in teaching technique.</p>
+      </div>
+    </div>
+  </body>
 </html>

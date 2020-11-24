@@ -20,11 +20,7 @@ function validateForm() {
         return false;
     }
     else {
-        alert("Submission successful, try another")
+        alert("Submission successful, try another");
         return true;
     }
 }
-$(function() {
-    $(#header).load("header.html");
-    $(#sidebar).load("sidebar.html");
-})

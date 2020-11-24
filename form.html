@@ -1,65 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Page Title</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-.sidenav {
-	height: 100%;
-	width: 20%;
-}
-.sidenav a {
-  float: left; /* Make sure that the links stay side-by-side */
-  display: block; /* Change the display to block, for responsive reasons (see below) */
-  color: Black; /* White text color */
-  padding: 14px 20px; /* Add some padding */
-  text-decoration: none; /* Remove underline */
-}
-.sidenav a:hover {
-	color:red;
-}
-.header {
-  padding: 80px; /* some padding */
-  text-align: center; /* center the text */
-  background: #1abc9c; /* green background */
-  color: white; /* white text color */
-  background-image: url('1.svg');
-}
-
-/* Increase the font size of the <h1> element */
-.header h1 {
-  font-size: 40px;
-}
-/* Ensure proper sizing */
-* {
-  box-sizing: border-box;
-}
-
-/* Column container */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-}
-.side {
-  flex: 30%; /* Set the width of the sidebar */
-  hight: 100%;
-  background-color: #f1f1f1; /* Grey background color */
-  padding: 20px; /* Some padding */
-}
-
-/* Main column */
-.main {
-  flex: 70%; /* Set the width of the main content */
-  background-color: white; /* White background color */
-  padding: 20px; /* Some padding */
-}
-</style>
-</head>
-<body>
+  <head>
+    <title>IGNOU's website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="mystyle.css">
+  </head>
+  <body>
 <!-- <script>function validateForm() {
   x = document.forms["check"]["fname"].value;
   if (x == "") {
@@ -67,38 +14,38 @@ body {
       return false;
   }
 }</script> -->
-<div class="header">
-  <h1>IGNOU</h1>
-  <p>we focus on enhancing the student abilities by giving them a
-	a chance to what ever they want</p>
-</div>
+    <div class="header">
+      <h1>IGNOU</h1>
+      <p>we focus on enhancing the student abilities by giving them a
+      a chance to what ever they want</p>
+    </div>
 
-<div class="row">
-  <div class="side">
-  	<div class="sidenav">
-  		<a href="index.html">Home</a>
-  		<a href="list.html">Program List</a>
-  		<a href="form.html">Registration Form</a>
-  		<a href="date.html">Imortant Dates</a>
-  	</div>
-  </div>
-  <script src = "validate.js"></script>
-  <div class="main">
-    <h1>Registration Page</h1>
-    <form name="check"  method = "POST" onsubmit = "return validateForm()">
-      <label for="fname">Student Name:</label><br>
-      <input type="text" size="20" id="fname" name="fname"><br>
-      <label for="id">email id:</label><br>
-      <input type="text" id="id" name="id"><br><br>
-      <label for="phone">Phone:</label><br>
-      <input type="text" id="phone" name="phone"><br>
-      <label for="qual">Qualification:</label><br>
-      <input type="text" id="qual" name="qual"><br><br>
-      <label for="prog">programme Name:</label><br>
-      <input type="text" id="prog" name="prog"><br>
-      <input type="submit" value="Submit"> 
-    </form>
-</div>
-
-</body>
+    <div class="row">
+      <div class="side">
+        <div class="sidenav">
+          <a href="index.html">Home</a>
+          <a href="list.html">Program List</a>
+          <a href="form.html">Registration Form</a>
+          <a href="date.html">Imortant Dates</a>
+        </div>
+      </div>
+      <script src = "validate.js"></script>
+      <div class="main">
+        <h1>Registration Form</h1>
+        <form name="check"  method = "POST" onsubmit = "return validateForm()">
+          <label for="fname">Student Name:</label><br>
+          <input type="text" size="20" id="fname" name="fname"><br>
+          <label for="id">email id:</label><br>
+          <input type="text" id="id" name="id"><br>
+          <label for="phone">Phone:</label><br>
+          <input type="text" id="phone" name="phone"><br>
+          <label for="qual">Qualification:</label><br>
+          <input type="text" id="qual" name="qual"><br>
+          <label for="prog">programme Name:</label><br>
+          <input type="text" id="prog" name="prog"><br>
+          <input type="submit" value="Submit"> 
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
